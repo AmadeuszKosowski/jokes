@@ -9,6 +9,7 @@ public class Joke {
     private Integer id;
     private String text;
     private String category;
+    private String name;
 
 
 }
