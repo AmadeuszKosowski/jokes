@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p th:text="${joke}" />
+
+<h2>Znasz lepszy?</h2>
+<form action="#" th:action="@{/joke}" method="post">
+    <p>Żart: <input type="text" th:value="${newJoke}" name="newJoke" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+<ul th:each="joke : ${jokes}">
+    <li th:text="${joke}"></li>
+</ul>
+
+</body>
+</html>
